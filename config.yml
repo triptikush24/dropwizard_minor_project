@@ -1,0 +1,22 @@
+template: Hello, %s!
+defaultName: Stranger
+
+database:
+  driverClass: org.h2.Driver
+  url: jdbc:h2:./data/dropwizard.db
+  user: sa
+  password: sa
+  properties:
+    charSet: UTF-8
+  maxWaitForConnection: 1s
+  validationQuery: "SELECT 1"
+  validationQueryTimeout: 3s
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+
+logging:
+  level: INFO
+  loggers:
+    com.example: DEBUG
+    org.jdbi: DEBUG 
