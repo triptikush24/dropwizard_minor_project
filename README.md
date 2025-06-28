@@ -119,13 +119,3 @@ The application uses `config.yml` for configuration. Key settings:
 1. Create DAO interface in `src/main/java/com/example/dao/`
 2. Use JDBI annotations for SQL operations
 3. Create row mapper if needed
-
-## Troubleshooting
-
-- **Port conflicts**: Change the port in `config.yml`
-- **Database issues**: Check database URL and credentials
-- **Build errors**: Ensure Java 17+ is being used
-
-## License
-
-This project is for educational purposes. 
